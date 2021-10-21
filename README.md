@@ -1,4 +1,4 @@
-# SQL
+# SQL for data analysis
 # Rockbuster Stealth Data Analysis Project
     
 ## Key Questions and Objectives
@@ -17,3 +17,7 @@ the main questions they’d like to answer:
 I’ll be using a data set that contains information about Rockbuster’s
 film inventory, customers, and payments, among other things.
 http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip
+
+## Tableau
+I createted a visualizations of SQL results in Tableau.
+[Link to Tableau visualization](https://public.tableau.com/views/3_10TaskPresentingSQLResults/Story1?:language=de-DE&:display_count=n&:origin=viz_share_link )
