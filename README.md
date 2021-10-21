@@ -1,5 +1,9 @@
 # SQL for data analysis
-# Rockbuster Stealth Data Analysis Project
+
+# Rockbuster Stealth Data Analysis
+
+## Introduction
+Rockbuster Stealth LLC is a film distributor that used to have branches all over the world. Facing stiff competition from streaming services such as Netflix and Amazon Prime,Rockbuster Stealth's management team plans to use its existing film licences to launch an online video rental service to remain competitive. The BI department helps other departments, from inventory to customer insights, with data-related queries.
     
 ## Key Questions and Objectives
     
