@@ -1,4 +1,4 @@
-/*Here are SQL queries with a common table expressionFilm & Genre by revenue
+/*Film & Genre by revenue
 SQL query for anyswer the follwing questions: Which genres generate the most sales? What are the top 10 films by revenue?*/
 
 SELECT F.name AS genre,
@@ -12,7 +12,7 @@ INNER JOIN category F ON E.category_id = F.category_id
 GROUP BY F.name
 ORDER BY category_revenue DESC;
 
-/*Here are SQL queries with a common table expressionCountries by revenue
+/*Countries by revenue
 SQL query for anyswer the follwing question: What are the top 3 countries by revenue?*/
 
 SELECT  co.country AS country,
@@ -26,7 +26,7 @@ JOIN country co ON ci.country_id = co.country_id
 GROUP BY co.country
 ORDER BY revenue DESC;
 
-/*Here are SQL queries with a common table expressionCountries by counter
+/*Countries by counter
 SQL query for anyswer the follwing question: What are the top 3 countries by customer counts?*/
 
 SELECT D.country AS country	
@@ -38,7 +38,7 @@ JOIN country D ON C.country_id = D.country_id
 GROUP BY D.country	
 ORDER BY customer_count DESC;	
 
-/*Here are SQL queries with a common table expressionTop 5 customers
+/*Top 5 customers
 SQL query for anyswer the follwing question: What are the top 3 countries by total amount paid?*/
 
 WITH customer_table (customer_id, first_name, last_name, country, city, amount) AS 	
