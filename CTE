@@ -1,7 +1,7 @@
-/*Here are SQL queries with a common table expression:
+# Here are SQL queries with a common table expression
 
-Film & Genre by revenue
-SQL query for anyswer the follwing questions: Which genres generate the most sales? What are the top 10 films by revenue?*/
+## Film & Genre by revenue
+SQL query for anyswer the follwing questions: Which genres generate the most sales? What are the top 10 films by revenue?
 
 SELECT F.name AS genre,
        SUM(A.amount) AS category_revenue
@@ -14,8 +14,8 @@ INNER JOIN category F ON E.category_id = F.category_id
 GROUP BY F.name
 ORDER BY category_revenue DESC;
 
-/*Countries by revenue
-SQL query for anyswer the follwing question: What are the top 3 countries by revenue?*/
+## Countries by revenue
+SQL query for anyswer the follwing question: What are the top 3 countries by revenue?
 
 SELECT  co.country AS country,
     SUM(p.amount) AS revenue
@@ -28,8 +28,8 @@ JOIN country co ON ci.country_id = co.country_id
 GROUP BY co.country
 ORDER BY revenue DESC;
 
-/*Countries by counter
-SQL query for anyswer the follwing question: What are the top 3 countries by customer counts?*/
+## Countries by counter
+SQL query for anyswer the follwing question: What are the top 3 countries by customer counts?
 
 SELECT D.country AS country	
        COUNT(A.customer_id) AS customer_count	
@@ -40,8 +40,8 @@ JOIN country D ON C.country_id = D.country_id
 GROUP BY D.country	
 ORDER BY customer_count DESC;	
 
-/*Top 5 customers
-SQL query for anyswer the follwing question: What are the top 3 countries by total amount paid?*/
+## Top 5 customers
+SQL query for anyswer the follwing question: What are the top 3 countries by total amount paid?
 
 WITH customer_table (customer_id, first_name, last_name, country, city, amount) AS 	
 	(SELECT A.customer_id,  A.first_name, A.last_name,  E.country, D.city, G.amount
